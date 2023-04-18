@@ -1,104 +1,104 @@
 @import url(/style.css);
 @import url(/apps/apps.css);
 
-/* nav style */
+/*--------------------- Barra de Navegacion ---------------------*/
 nav{
-    height: 52px;
+    width: 100%;
+    height: 7vh;
 }
 
-/* nav children style*/
+#logo{
+    width: 150px;
+}
+
 .container1{
-    height: 32px;
-    text-align: center;
-    align-items: center;
-    font-size: 25px;
-    gap:150px
-}
-.container1 img{
-    width: 8%;
-}
-.container1 div{
+    background-image: url(../images/XiP3qS0.jpg);
+    padding: 10px 0px;
     display: flex;
     flex-direction: row;
-    color: white;
-}
-.container1 div img{
-width: 30px;
-height: 35px;
-}
-.container1 div img:hover{
-    cursor: pointer;
-}
-.cart{
-    width: 39px;
-    height: 38px;
+    text-align: center;
+    justify-content: space-around;
+    width:100%;
+    font-size: 25px;
 }
 
-.container1 .carrito{
+.container1 ul{
+    display: flex;
+}
+
+.alink, 
+.carrito{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.alink{
+    margin: 5px 15px;
+}
+
+.carrito{
+    padding: 0px 10px;
+}
+
+.alink:hover,
+.carrito:hover{
+    background-color:rgb(90, 94, 224);
+    cursor: pointer;
+}
+
+.carrito button{
+    background-color:transparent;
+    border: none;
+    cursor: pointer;
+}
+/* ------------------------------------------------------------ */
+
+/*----------- Ventana Modal Carrito de Compras -----------*/
+#miVentanaModal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 80%;
+    height: 80%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+#miVentanaModal .salir{
+    position: absolute;
+    cursor: pointer;
     width: 30px;
     height: 30px;
+    border-radius: 2px;
+    right: 10px;
+    top: 10px;
+    border: none;
 }
+/* ------------------------------------------------------ */
 
-
-/* Estilo del contenido del carrito*/
-.cart-products{
-    text-align: center;
-    top: 40px;
-    right: 18px;
-    background-color: #fff;
-    padding: 0 18px;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
-    display: none;
-
-}
-.cart-products h3{
-    border-bottom: solid 2px rgb(112, 94, 218); ;
-}
-.cart-products img{
-    width: 80px;
-
-}
-.close-btn{
-    text-align: end;
-    font-size: 20px;
-    color: rgb(112, 94, 218);;
-
-}
-.close-btn:hover{
-    cursor: pointer;
-}
-.item{
-    border-bottom: solid 1px rgb(112, 94, 218);
-    margin-top: 10px;
-    padding: 10px;
-}
-.delete-product{
-    margin-top: 5px;
-    padding: 0px 10px 0px 10px;
-    color: rgb(112, 94, 218);
-    font-weight: bold;
-    border: solid 2px rgb(112, 94, 218);
-}
-.delete-product:hover{
-cursor: pointer;
-}
-.item-content{
-    margin-bottom: 5px;
-}
 
 .contenedor-productos{
-    margin-top: 65px;
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
+    min-height: 93vh;
 }
 
 .contenedor-productos h1{
     text-align: center;
+    margin-top: 0px;
 }
 
 .contenedor-productos a{
+    cursor: default;
     text-align: center;
     text-decoration: none;
 }
@@ -107,7 +107,6 @@ cursor: pointer;
 .products{
     padding-top: 80px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 .carts{
@@ -157,4 +156,11 @@ cursor: pointer;
     color: rgb(112, 94, 218);
     border: solid 2px rgb(112, 94, 218);
     transition-duration: .3s;
+}
+
+@media (min-height: 796px) {
+    .contenedor-productos h1{
+        text-align: center;
+        margin-top: -320px;
+    }
 }
