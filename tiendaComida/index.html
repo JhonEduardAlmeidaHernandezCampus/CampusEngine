@@ -8,93 +8,22 @@
     <title>CampersEngine</title>
     <link rel="stylesheet" href="/tiendaComida/style.css">
     
+    <script src="main.js" type="module" defer></script>
 </head>
 <body>
-    <nav>
-        <section class="container1">
-                <img id="logo" src="../images/logoWhite.png" alt="">
-            <ul>
-                <li class="alink">
-                    <a href="../index.html" class="alink">Inicio</a>
-                </li>
-                <li class="alink">
-                    <a href="../servicios/index.html" class="alink">Servicios</a>
-                </li>
-                <li class="alink">
-                    <a href="../soporte/index.html" class="alink">Soporte</a>
-                </li>
-                <li class="carrito">
-                    <button id="abrir"><img src="../images/cart-regular-24.png" alt=""></button>
-                </li>
-            </ul>
-        </section>
-    </nav>
+    <!-- Barra de Navegación -->
+    <nav id="navegacionCafeteria"></nav>
+    <!-- ------------------- -->
 
-    <div id="miVentanaModal">
+    <!-- <div id="miVentanaModal">
         <div>
             <button id="cerrar" class="salir">X</button>
         </div>
         <h1>Hola</h1>
-    </div>
+    </div> -->
 
-    <div class="contenedor-productos">
-        <h1>
-            Cafeteria Virtual
-        </h1>
-        <a href="" style="color: black";>
-            Sección compra
-        </a>
-
-        <div class="products">
-            <div class="carts">
-
-                <img src="../images/papasmargarita.jpg" alt="">
-
-                <p>
-                    Papas <br>
-                    2000$
-                </p>
-
-                <a>
-                    AÑADIR AL CARRITO
-                </a>
-
-            </div>
-            <div class="carts">
-
-                <img src="../images/Pastel-de-Pollo7.jpg" alt="">
-
-                <p>
-                    Pasteles <br> 
-                    2000$
-                </p>
-
-                <a>
-                    AÑADIR AL CARRITO
-                </a>
-
-            </div>
-            
-            <div class="carts">
-
-                <img src="../images/Color-del-cafe-filtrado-y-su-parecido-con-el-color-de-un-vino-tinto.-scaled.jpg" alt="">
-
-                <p>
-                    Cafe <br>
-                    2000$
-                </p>
-
-                <a>
-                    AÑADIR AL CARRITO
-                </a>
-
-            </div>
-            
-        </div>
-
-    </div>
-
-
-    <script src="/js/tienda.js" ></script>
+    <!-- Contenedor de productos de la cafeteria -->
+    <div class="contenedor-productos" id="contentProductos"></div>
+    <!-- --------------------------------------- -->
 </body>
 </html>

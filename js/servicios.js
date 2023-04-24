@@ -77,7 +77,7 @@ export default{
                                                                         </button>
 
                                                                     </div>
-                                                                    `)}
+                                                                    `).join("")}
                         `
 
         document.querySelector("#contenedor-tarjetas").insertAdjacentHTML("beforeend", plantilla);
